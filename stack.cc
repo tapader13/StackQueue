@@ -58,7 +58,15 @@ public:
         }
     }
 };
-
+void printStack(Stack st)
+{
+    cout << "Stack: ";
+    for(int i =st.top ; i >=0; i--)
+    {
+        cout << st.arr[i] << " ";
+    }
+    cout << endl;
+}
 int main()
 {
     Stack st(5);
@@ -67,4 +75,5 @@ int main()
     // st.pop();
     cout << st.isEmpty();
     cout << st.peek();
+     printStack(st);
 }
